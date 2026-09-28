@@ -1,0 +1,27 @@
+{
+  "name": "cypressatividade",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server . -p 3000",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joaoemanuelx/CypressAtividade.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Joaoemanuelx/CypressAtividade/issues"
+  },
+  "homepage": "https://github.com/Joaoemanuelx/CypressAtividade#readme",
+  "devDependencies": {
+    "cypress": "^16.1.0",
+    "http-server": "^14.1.1"
+  }
+}
