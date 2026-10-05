@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro de Hóspedes do Hotel</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main class="container">
+		<section class="form-card" aria-labelledby="page-title">
+			<header class="form-header">
+				<p class="eyebrow">Hotel</p>
+				<h1 id="page-title">Registro de Hóspedes</h1>
+				<p>Preencha os dados da sua reserva para concluir o cadastro.</p>
+			</header>
+
+			<form id="guest-form" novalidate>
+				<div class="form-grid">
+					<div class="form-group form-group-full">
+						<label for="full-name">Nome completo</label>
+						<input type="text" id="full-name" name="fullName" autocomplete="name" required>
+						<small class="error-message" id="full-name-error"></small>
+					</div>
+
+					<div class="form-group">
+						<label for="email">E-mail</label>
+						<input type="email" id="email" name="email" autocomplete="email" required>
+						<small class="error-message" id="email-error"></small>
+					</div>
+
+					<div class="form-group">
+						<label for="phone">Telefone</label>
+						<input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(00) 00000-0000" required>
+						<small class="error-message" id="phone-error"></small>
+					</div>
+
+					<div class="form-group">
+						<label for="check-in">Data de check-in</label>
+						<input type="date" id="check-in" name="checkIn" required>
+						<small class="error-message" id="check-in-error"></small>
+					</div>
+
+					<div class="form-group">
+						<label for="check-out">Data de check-out</label>
+						<input type="date" id="check-out" name="checkOut" required>
+						<small class="error-message" id="check-out-error"></small>
+					</div>
+
+					<div class="form-group">
+						<label for="guests">Número de hóspedes</label>
+						<input type="number" id="guests" name="guests" min="1" max="20" value="1" required>
+						<small class="error-message" id="guests-error"></small>
+					</div>
+				</div>
+
+				<button type="submit">Registrar hóspede</button>
+				<p id="success-message" class="success-message" role="status" aria-live="polite"></p>
+			</form>
+		</section>
+	</main>
+
+	<script src="app.js"></script>
+</body>
+</html>
